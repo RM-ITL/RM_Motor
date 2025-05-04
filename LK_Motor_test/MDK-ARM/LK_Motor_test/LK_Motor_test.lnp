@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"lk_motor_test\startup_stm32f407xx.o"
+"lk_motor_test\main.o"
+"lk_motor_test\gpio.o"
+"lk_motor_test\can.o"
+"lk_motor_test\stm32f4xx_it.o"
+"lk_motor_test\stm32f4xx_hal_msp.o"
+"lk_motor_test\stm32f4xx_hal_can.o"
+"lk_motor_test\stm32f4xx_hal_rcc.o"
+"lk_motor_test\stm32f4xx_hal_rcc_ex.o"
+"lk_motor_test\stm32f4xx_hal_flash.o"
+"lk_motor_test\stm32f4xx_hal_flash_ex.o"
+"lk_motor_test\stm32f4xx_hal_flash_ramfunc.o"
+"lk_motor_test\stm32f4xx_hal_gpio.o"
+"lk_motor_test\stm32f4xx_hal_dma_ex.o"
+"lk_motor_test\stm32f4xx_hal_dma.o"
+"lk_motor_test\stm32f4xx_hal_pwr.o"
+"lk_motor_test\stm32f4xx_hal_pwr_ex.o"
+"lk_motor_test\stm32f4xx_hal_cortex.o"
+"lk_motor_test\stm32f4xx_hal.o"
+"lk_motor_test\stm32f4xx_hal_exti.o"
+"lk_motor_test\system_stm32f4xx.o"
+"lk_motor_test\bsp_can.o"
+--strict --scatter "LK_Motor_test\LK_Motor_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LK_Motor_test.map" -o LK_Motor_test\LK_Motor_test.axf
