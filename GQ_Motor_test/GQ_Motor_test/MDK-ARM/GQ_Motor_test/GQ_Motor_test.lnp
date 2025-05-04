@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"gq_motor_test\startup_stm32f407xx.o"
+"gq_motor_test\main.o"
+"gq_motor_test\gpio.o"
+"gq_motor_test\can.o"
+"gq_motor_test\stm32f4xx_it.o"
+"gq_motor_test\stm32f4xx_hal_msp.o"
+"gq_motor_test\stm32f4xx_hal_can.o"
+"gq_motor_test\stm32f4xx_hal_rcc.o"
+"gq_motor_test\stm32f4xx_hal_rcc_ex.o"
+"gq_motor_test\stm32f4xx_hal_flash.o"
+"gq_motor_test\stm32f4xx_hal_flash_ex.o"
+"gq_motor_test\stm32f4xx_hal_flash_ramfunc.o"
+"gq_motor_test\stm32f4xx_hal_gpio.o"
+"gq_motor_test\stm32f4xx_hal_dma_ex.o"
+"gq_motor_test\stm32f4xx_hal_dma.o"
+"gq_motor_test\stm32f4xx_hal_pwr.o"
+"gq_motor_test\stm32f4xx_hal_pwr_ex.o"
+"gq_motor_test\stm32f4xx_hal_cortex.o"
+"gq_motor_test\stm32f4xx_hal.o"
+"gq_motor_test\stm32f4xx_hal_exti.o"
+"gq_motor_test\system_stm32f4xx.o"
+"gq_motor_test\can1.o"
+--strict --scatter "GQ_Motor_test\GQ_Motor_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GQ_Motor_test.map" -o GQ_Motor_test\GQ_Motor_test.axf
